@@ -1,24 +1,28 @@
-<div class="container">
-    <div class="row w-100 align-items-center">
-        <div class="col-6">
-            <label for="player" class="form-label mb-0">Modo</label>
-            <select class="form-select form-select-lg" name="player" id="player" [(ngModel)]="modo">
-                <option selected></option>
-                <option value="Jugador">Jugador</option>
-                <option value="Master">Master</option>
-            </select>
+<div class="container-fluid">
+  <div class="card mb-4">
+    <div class="card-header">Partida</div>
+    <div class="card-body">
+      <div class="row w-100 align-items-center">
+        <div class="col-10">
+          <label for="game" class="form-label mb-0">Partida</label>
+          <select
+            class="form-select form-select-lg"
+            name="game"
+            id="game"
+            [(ngModel)]="partida"
+          >
+            <option selected></option>
+          </select>
         </div>
-        <div class="col-4">
-            <label for="game" class="form-label mb-0">Partida</label>
-            <select class="form-select form-select-lg" name="game" id="game" [(ngModel)]="partida">
-                <option selected></option>
-                <option value="1">Partida 1</option>
-                <option value="2">Partida 2</option>
-                <option value="3">Partida 3</option>
-            </select>
+        <div class="col-2 d-flex flex-row align-items-center justify-content-start gap-2">
+          <button class="form-control btn btn-success btn-lg">
+            <i class="bi bi-plus-circle"></i>
+          </button>
+          <button class="form-control btn btn-danger btn-lg">
+            <i class="bi bi-trash"></i>
+          </button>
         </div>
-        <div class="col-2">
-            <button  type="button" class="btn btn-primary" (click)="log()">Logs</button>
-        </div>
+      </div>
     </div>
+  </div>
 </div>

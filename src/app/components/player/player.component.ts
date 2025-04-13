@@ -11,26 +11,26 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './player.component.scss'
 })
 export class PlayerComponent {
-  nombre : String = "Prueba";
-  vida : String = "50";
-  vidaMaxima : String = "100";
-  mana : String = "50";
-  manaMaximo : String = "100";
-  manaCargado : String = "50";
-  cansancio : String = "8";
-  cansancioMaxiomo : String = "8";
-  rfisico : String = "70";
-  rmagico : String = "70";
-  rpsiquico : String = "70";
-  presencia : String = "50";
-  aguilidad : String = "8";
-  destreza : String = "8";
-  fuerza : String = "8";
-  constitucion : String = "8";
-  percepcion : String = "8";
-  inteligencia : String = "8";
-  poder : String = "8";
-  voluntad : String = "8";
-  movimiento : String = "40";
-  move : String = "5";
+  nombre : String = "";
+  vida : String = "";
+  vidaMaxima : String = "";
+  mana : String = "";
+  manaMaximo : String = "";
+  manaCargado : String = "";
+  cansancio : String = "";
+  cansancioMaximo : String = "";
+  rfisico : String = "";
+  rmagico : String = "";
+  rpsiquico : String = "";
+  presencia : String = "";
+  agilidad : String = "";
+  destreza : String = "";
+  fuerza : String = "";
+  constitucion : String = "";
+  percepcion : String = "";
+  inteligencia : String = "";
+  poder : String = "";
+  voluntad : String = "";
+  movimiento : String = "";
+  move : String = "";
 }
