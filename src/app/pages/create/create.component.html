@@ -1,0 +1,417 @@
+<div class="container-fluid">
+    <form>
+        <div class="row mb-4">
+            <h1 class="text-center">Crear Personaje</h1>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header text-center">Información Básica</div>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="mb-3 col-md-2">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required />
+                    </div>
+                    <div class="mb-3 col-md-2">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos" name="apellidos" required />
+                    </div>
+                    <div class="mb-3 col-md-2">
+                        <label for="categoria" class="form-label">Categoría</label>
+                        <select class="form-select" id="categoria" name="categoria" aria-label="select categoria"
+                            required>
+                            <option value="">Selecciona una categoría</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-md-1">
+                        <label for="nivel" class="form-label">Nivel</label>
+                        <select class="form-select" id="nivel" name="nivel" aria-label="select nivel" required>
+                            <option value="">Nivel</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header text-center">Ventajas y Desventajas</div>
+            <div class="card-body">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-4">
+                        <label for="ventaja1" class="form-label">Ventaja</label>
+                        <select class="form-select" id="ventaja1" name="ventaja1" aria-label="select ventaja1">
+                            <option value="">Selecciona una ventaja</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="desventaja1" class="form-label">Desventaja</label>
+                        <select class="form-select" id="desventaja1" name="desventaja1" aria-label="select desventaja1">
+                            <option value="">Selecciona una desventaja</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-3">
+                    <div class="col-md-4">
+                        <label for="ventaja2" class="form-label">Ventaja</label>
+                        <select class="form-select" id="ventaja2" name="ventaja2" aria-label="select ventaja2">
+                            <option value="">Selecciona una ventaja</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="desventaja2" class="form-label">Desventaja</label>
+                        <select class="form-select" id="desventaja2" name="desventaja2" aria-label="select desventaja2">
+                            <option value="">Selecciona una desventaja</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <label for="ventaja3" class="form-label">Ventaja</label>
+                        <select class="form-select" id="ventaja3" name="ventaja3" aria-label="select ventaja3">
+                            <option value="">Selecciona una ventaja</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="desventaja3" class="form-label">Desventaja</label>
+                        <select class="form-select" id="desventaja3" name="desventaja3" aria-label="select desventaja3">
+                            <option value="">Selecciona una desventaja</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header text-center">Atributos</div>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col-md-1">
+                        <label for="fuerza" class="form-label">Fuerza</label>
+                        <input type="number" class="form-control" id="fuerza" name="fuerza" min="1" max="20" required />
+                    </div>
+                    <div class="col-md-1">
+                        <label for="constitucion" class="form-label">Constitucion</label>
+                        <input type="number" class="form-control" id="constitucion" name="constitucion" min="1" max="20"
+                            required />
+                    </div>
+                    <div class="col-md-1">
+                        <label for="destreza" class="form-label">Destreza</label>
+                        <input type="number" class="form-control" id="destreza" name="destreza" min="1" max="20"
+                            required />
+                    </div>
+                    <div class="col-md-1">
+                        <label for="agilidad" class="form-label">Agilidad</label>
+                        <input type="number" class="form-control" id="agilidad" name="agilidad" min="1" max="20"
+                            required />
+                    </div>
+                    <div class="col-md-1">
+                        <label for="percepcion" class="form-label">Percepcion</label>
+                        <input type="number" class="form-control" id="percepcion" name="percepcion" min="1" max="20"
+                            required />
+                    </div>
+                    <div class="col-md-1">
+                        <label for="inteligencia" class="form-label">Inteligencia</label>
+                        <input type="number" class="form-control" id="inteligencia" name="inteligencia" min="1" max="20"
+                            required />
+                    </div>
+                    <div class="col-md-1">
+                        <label for="poder" class="form-label">Poder</label>
+                        <input type="number" class="form-control" id="poder" name="poder" min="1" max="20" required />
+                    </div>
+                    <div class="col-md-1">
+                        <label for="voluntad" class="form-label">Voluntad</label>
+                        <input type="number" class="form-control" id="voluntad" name="voluntad" min="1" max="20"
+                            required />
+                    </div>
+                    <div class="col-md-1">
+                        <label for="generar" class="form-label">Generar</label>
+                        <button class="form-control btn-success btn lg">
+                            <i class="bi bi-dice-6"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header text-center">Combate</div>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <label for="hataque" class="form-label">Ataque</label>
+                        <input type="number" class="form-control" id="hataque" name="hataque" />
+                        <input type="number" class="form-control" id="ihataque" name="ihataque" disabled />
+                        <label for="hdefensa" class="form-label">Defensa</label>
+                        <input type="number" class="form-control" id="hdefensa" name="hdefensa" />
+                        <input type="number" class="form-control" id="ihdefensa" name="ihdefensa" disabled />
+                        <label for="hesquiva" class="form-label">Esquiva</label>
+                        <input type="number" class="form-control" id="hesquiva" name="hesquiva" />
+                        <input type="number" class="form-control" id="ihesquiva" name="ihesquiva" disabled />
+                    </div>
+                    <div class="col-2">
+                        <label for="pataque" class="form-label">Proyeccion Ataque</label>
+                        <input type="number" class="form-control" id="pataque" name="pataque" />
+                        <input type="number" class="form-control" id="ipataque" name="ipataque" disabled />
+                        <label for="pdefensa" class="form-label">Proyeccion Defensa</label>
+                        <input type="number" class="form-control" id="pdefensa" name="pdefensa" />
+                        <input type="number" class="form-control" id="ipdefensa" name="ipdefensa" disabled />
+                    </div>
+                    <div class="col-2">
+                        <label for="ki" class="form-label">Ki</label>
+                        <input type="number" class="form-control" id="ki" name="ki" />
+                        <input type="number" class="form-control" id="iki" name="iki" disabled />
+                        <label for="zeon" class="form-label">Zeon</label>
+                        <input type="number" class="form-control" id="zeon" name="zeon" />
+                        <input type="number" class="form-control" id="izeon" name="izeon" disabled />
+                        <label for="cv" class="form-label">CV</label>
+                        <input type="number" class="form-control" id="cv" name="cv" />
+                        <input type="number" class="form-control" id="icv" name="icv" disabled />
+                    </div>
+                    <div class="col-2">
+                        <label for="vida" class="form-label">Vida</label>
+                        <input type="number" class="form-control" id="vida" name="vida" />
+                        <input type="number" class="form-control" id="ivida" name="ivida" disabled />
+                        <label for="armadura" class="form-label">LLevar Armadura</label>
+                        <input type="number" class="form-control" id="armadura" name="armadura" />
+                        <input type="number" class="form-control" id="iarmadura" name="iarmadura" disabled />
+                    </div>
+                    <div class="col-2">
+                        <label for="lvlmagia" class="form-label">lvl Magia</label>
+                        <input type="number" class="form-control" id="lvlmagia" name="lvlmagia" />
+                        <input type="number" class="form-control" id="ilvlmagia" name="ilvlmagia" disabled />
+                        <label for="cmarcial" class="form-label">C. Marcial</label>
+                        <input type="number" class="form-control" id="cmarcial" name="cmarcial" />
+                        <input type="number" class="form-control" id="icmarcial" name="icmarcial" disabled />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header text-center">Secundarias</div>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <div class="card mb-4">
+                            <div class="card-header text-center">Costes</div>
+                            <div class="card-body">
+                                <label for="atleticas" class="form-label">Atleticas</label>
+                                <input type="number" class="form-control" id="iatleticas" name="iatleticas" disabled />
+                                <label for="vigor" class="form-label">Vigor</label>
+                                <input type="number" class="form-control" id="ivigor" name="ivigor" disabled />
+                                <label for="perceptivas" class="form-label">Perceptivas</label>
+                                <input type="number" class="form-control" id="iperceptivas" name="iperceptivas"
+                                    disabled />
+                                <label for="intelecuales" class="form-label">Intelecuales</label>
+                                <input type="number" class="form-control" id="iintelecuales" name="iintelecuales"
+                                    disabled />
+                                <label for="sociales" class="form-label">Sociales</label>
+                                <input type="number" class="form-control" id="isociales" name="isociales" disabled />
+                                <label for="subterfugio" class="form-label">Subterfugio</label>
+                                <input type="number" class="form-control" id="isubterfugio" name="isubterfugio"
+                                    disabled />
+                                <label for="creativas" class="form-label">Creativas</label>
+                                <input type="number" class="form-control" id="icreativas" name="icreativas" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card mb-4">
+                            <div class="card-header text-center">Atleticas</div>
+                            <div class="card-body">
+                                <label for="atletismo" class="form-label">Atletismo</label>
+                                <input type="number" class="form-control" id="atletismo" name="atletismo" />
+                                <input type="number" class="form-control" id="iatletiemos" name="iatletiemos"
+                                    disabled />
+                                <label for="acrobacias" class="form-label">Acrobacias</label>
+                                <input type="number" class="form-control" id="acrobacias" name="acrobacias" />
+                                <input type="number" class="form-control" id="iacrobacias" name="iacrobacias"
+                                    disabled />
+                                <label for="saltar" class="form-label">Saltar</label>
+                                <input type="number" class="form-control" id="saltar" name="saltar" />
+                                <input type="number" class="form-control" id="isaltar" name="isaltar" disabled />
+                                <label for="trepar" class="form-label">Trepar</label>
+                                <input type="number" class="form-control" id="trepar" name="trepar" />
+                                <input type="number" class="form-control" id="itrepar" name="itrepar" disabled />
+                                <label for="montar" class="form-label">Montar</label>
+                                <input type="number" class="form-control" id="montar" name="montar" />
+                                <input type="number" class="form-control" id="imontar" name="imontar" disabled />
+                                <label for="nadar" class="form-label">Nadar</label>
+                                <input type="number" class="form-control" id="nadar" name="nadar" />
+                                <input type="number" class="form-control" id="inadar" name="inadar" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card mb-4">
+                            <div class="card-header text-center">Vigor</div>
+                            <div class="card-body">
+                                <label for="frialdad" class="form-label">Frialdad</label>
+                                <input type="number" class="form-control" id="frialdad" name="frialdad" />
+                                <input type="number" class="form-control" id="ifrialdad" name="ifrialdad" disabled />
+                                <label for="pfuerza" class="form-label">P.Fuerza</label>
+                                <input type="number" class="form-control" id="pfuerza" name="pfuerza" />
+                                <input type="number" class="form-control" id="ipfuerza" name="ipfuerza" disabled />
+                                <label for="rdorlor" class="form-label">R.Dorlor</label>
+                                <input type="number" class="form-control" id="rdorlor" name="rdorlor" />
+                                <input type="number" class="form-control" id="irdolor" name="irdolor" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card mb-4">
+                            <div class="card-header text-center">Perceptivas</div>
+                            <div class="card-body">
+                                <label for="advertir" class="form-label">Advertir</label>
+                                <input type="number" class="form-control" id="advertir" name="advertir" />
+                                <input type="number" class="form-control" id="iadvertir" name="iadvertir" disabled />
+                                <label for="buscar" class="form-label">Buscar</label>
+                                <input type="number" class="form-control" id="buscar" name="buscar" />
+                                <input type="number" class="form-control" id="ibuscar" name="ibuscar" disabled />
+                                <label for="rastrear" class="form-label">Rastrear</label>
+                                <input type="number" class="form-control" id="rastrear" name="rastrear" />
+                                <input type="number" class="form-control" id="irastrear" name="irastrear" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2">
+                        <div class="card mb-4">
+                            <div class="card-header text-center">Intelecuales</div>
+                            <div class="card-body">
+                                <label for="animales" class="form-label">Animales</label>
+                                <input type="number" class="form-control" id="animales" name="animales" />
+                                <input type="number" class="form-control" id="ianimales" name="ianimales" disabled />
+                                <label for="ciencia" class="form-label">Ciencia</label>
+                                <input type="number" class="form-control" id="ciencia" name="ciencia" />
+                                <input type="number" class="form-control" id="iciencia" name="iciencia" disabled />
+                                <label for="herbolaria" class="form-label">Herbolaria</label>
+                                <input type="number" class="form-control" id="herbolaria" name="herbolaria" />
+                                <input type="number" class="form-control" id="iherbolaria" name="iherbolaria"
+                                    disabled />
+                                <label for="historia" class="form-label">Historia</label>
+                                <input type="number" class="form-control" id="historia" name="historia" />
+                                <input type="number" class="form-control" id="ihistoria" name="ihistoria" disabled />
+                                <label for="medicina" class="form-label">Medicina</label>
+                                <input type="number" class="form-control" id="medicina" name="medicina" />
+                                <input type="number" class="form-control" id="imedicina" name="imedicina" disabled />
+                                <label for="memorizar" class="form-label">Memorizar</label>
+                                <input type="number" class="form-control" id="memorizar" name="memorizar" />
+                                <input type="number" class="form-control" id="imemorizar" name="imemorizar" disabled />
+                                <label for="navegacion" class="form-label">Navegacion</label>
+                                <input type="number" class="form-control" id="navegacion" name="navegacion" />
+                                <input type="number" class="form-control" id="inavegacion" name="inavegacion"
+                                    disabled />
+                                <label for="ocultismo" class="form-label">Ocultismo</label>
+                                <input type="number" class="form-control" id="ocultismo" name="ocultismo" />
+                                <input type="number" class="form-control" id="iocultismo" name="iocultismo" disabled />
+                                <label for="tasacion" class="form-label">Tasacion</label>
+                                <input type="number" class="form-control" id="tasacion" name="tasacion" />
+                                <input type="number" class="form-control" id="itasacion" name="itasacion" disabled />
+                                <label for="vmagica" class="form-label">V.Magica</label>
+                                <input type="number" class="form-control" id="vmagica" name="vmagica" />
+                                <input type="number" class="form-control" id="ivmagica" name="ivmagica" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card mb-4">
+                            <div class="card-header text-center">Sociales</div>
+                            <div class="card-body">
+                                <label for="estilo" class="form-label">Estilo</label>
+                                <input type="number" class="form-control" id="estilo" name="estilo" />
+                                <input type="number" class="form-control" id="iestilo" name="iestilo" disabled />
+                                <label for="intimidar" class="form-label">Intimidar</label>
+                                <input type="number" class="form-control" id="intimidar" name="intimidar" />
+                                <input type="number" class="form-control" id="iintimidar" name="iintimidar" disabled />
+                                <label for="liderazgo" class="form-label">Liderazgo</label>
+                                <input type="number" class="form-control" id="liderazgo" name="liderazgo" />
+                                <input type="number" class="form-control" id="iliderazgo" name="iliderazgo" disabled />
+                                <label for="persuadir" class="form-label">Persuadir</label>
+                                <input type="number" class="form-control" id="persuadir" name="persuadir" />
+                                <input type="number" class="form-control" id="ipersuadir" name="ipersuadir" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card mb-4">
+                            <div class="card-header text-center">Subterfugio</div>
+                            <div class="card-body">
+                                <label for="cerrajeria" class="form-label">Cerrajeria</label>
+                                <input type="number" class="form-control" id="cerrajeria" name="cerrajeria" />
+                                <input type="number" class="form-control" id="icerrajeria" name="icerrajeria"
+                                    disabled />
+                                <label for="disfraz" class="form-label">Disfraz</label>
+                                <input type="number" class="form-control" id="disfraz" name="disfraz" />
+                                <input type="number" class="form-control" id="idisfraz" name="idisfraz" disabled />
+                                <label for="ocultarse" class="form-label">Ocultarse</label>
+                                <input type="number" class="form-control" id="ocultarse" name="ocultarse" />
+                                <input type="number" class="form-control" id="iocultarse" name="iocultarse" disabled />
+                                <label for="robo" class="form-label">Robo</label>
+                                <input type="number" class="form-control" id="robo" name="robo" />
+                                <input type="number" class="form-control" id="irobo" name="irobo" disabled />
+                                <label for="sigilo" class="form-label">Sigilo</label>
+                                <input type="number" class="form-control" id="sigilo" name="sigilo" />
+                                <input type="number" class="form-control" id="isigilo" name="isigilo" disabled />
+                                <label for="tramperia" class="form-label">Tramperia</label>
+                                <input type="number" class="form-control" id="tramperia" name="tramperia" />
+                                <input type="number" class="form-control" id="itramperia" name="itramperia" disabled />
+                                <label for="venenos" class="form-label">Venenos</label>
+                                <input type="number" class="form-control" id="venenos" name="venenos" />
+                                <input type="number" class="form-control" id="ivenenos" name="ivenenos" disabled />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card mb-4">
+                            <div class="card-header text-center">Creativas</div>
+                            <div class="card-body">
+                                <label for="arte" class="form-label">Arte</label>
+                                <input type="number" class="form-control" id="arte" name="arte" />
+                                <input type="number" class="form-control" id="iarte" name="iarte" disabled />
+                                <label for="baile" class="form-label">Baile</label>
+                                <input type="number" class="form-control" id="baile" name="baile" />
+                                <input type="number" class="form-control" id="ibaile" name="ibaile" disabled />
+                                <label for="forja" class="form-label">Forja</label>
+                                <input type="number" class="form-control" id="forja" name="forja" />
+                                <input type="number" class="form-control" id="iforja" name="iforja" disabled />
+                                <label for="musica" class="form-label">Musica</label>
+                                <input type="number" class="form-control" id="musica" name="musica" />
+                                <input type="number" class="form-control" id="imusica" name="imusica" disabled />
+                                <label for="tmanos" class="form-label">T.Manos</label>
+                                <input type="number" class="form-control" id="tmanos" name="tmanos" />
+                                <input type="number" class="form-control" id="itmanos" name="itmanos" disabled />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header text-center">Inventario</div>
+            <div class="card-body">
+                <div class="row justify-content-center">
+                    <div class="mb-3 col-md-2">
+                        <label for="oro" class="form-label">Oro</label>
+                        <input type="text" class="form-control" id="oro" name="oro" disabled />
+                    </div>
+                    <div class="mb-3 col-md-2">
+                        <label for="oroGastado" class="form-label">Oro Gastado</label>
+                        <input type="text" class="form-control" id="oroGastado" name="oroGastado" disabled />
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center mb-5">
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Crear Personaje</button>
+            </div>
+        </div>
+    </form>
+</div>
